@@ -367,7 +367,7 @@
         return maxEval;
     }
     function getMoveLevel2(game) {
-        const depth = 3;
+        const depth = 4;
         let bestMove = null; let maxEval = -Infinity; let alpha = -Infinity; let beta = Infinity;
         const colorMultiplier = game.turn() === 'w' ? 1 : -1;
         const moves = game.moves({ verbose: true });
